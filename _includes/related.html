@@ -1,0 +1,20 @@
+<!-- related posts -->
+<div id="related">
+    <h2 id="exclude-related">Did you enjoy reading this article?</h2>
+    <p>Here are some more articles you might like to read next:</p>
+    <div class="related-container">
+	{% for post in site.related_posts limit:50 %}
+	<div class="h-scroll"
+	     style="background-image: url({{site.url}}{% if post.header-img %}{{ post.header-img}}{% else %}{{ site.default-img }}{% endif %});"
+	     onclick="location.href='{{ site.baseurl }}{{ post.url }}';"
+	>
+	    <a class="a-scroll" href="{{ post.url | prepend: site.baseurl }}">
+		{{ post.title }}
+	    </a>
+	    {% if post.coming-soon %}
+	    <span class="coming-soon">COMING SOON</span>
+	    {% endif %}
+	</div>
+	{% endfor %}
+    </div>
+</div>

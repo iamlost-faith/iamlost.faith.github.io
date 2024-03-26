@@ -1,0 +1,9 @@
+{% if site.verses %}
+<hr>
+<h5>CALLING VERSES</h5>
+<ul class="list-inline">
+  {% for verse in site.verses %}
+  <li><a href="{{verse.href}}">{{verse.title}}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
