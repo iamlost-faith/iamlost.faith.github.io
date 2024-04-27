@@ -1,0 +1,133 @@
+#showDisqus {
+    display: none;
+}
+
+#showCommentsDiv{
+    background: rgba(0,255,0,.1);
+    cursor: default;
+    display: centre;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 3% 0;
+}
+
+.tags-and-verses{
+    margin-bottom: 5%;
+}
+
+/* share icons */
+
+#share {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#share a {
+	width: 50px;
+  	height: 50px;
+  	display: inline-block;
+  	border-radius: 50%;
+  	font-size: 1.5em;
+  	color: #fff;
+	opacity: .85;
+	transition: opacity 0.15s linear;
+}
+
+#share a:hover {
+	opacity: 1;
+}
+
+#share i {
+  	position: relative;
+  	top: 36%;
+  	transform: translateY(-50%);
+}
+
+.facebook {
+ 	background: #3b5998;
+}
+
+.twitter {
+  	background: #55acee;
+}
+
+.whatsapp {
+  	background: #25d366;
+}
+
+.link{
+    background: black;
+}
+
+/* related */
+
+#related .related-container{
+  display: flex;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  width: 100%;
+}
+.related-container div {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position:50% 50%;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+}
+
+.related-container div:hover {
+    border: 3px solid rgba(0,0,0,0);
+    border-radius: 10px;
+}
+
+.related-container .h-scroll .coming-soon{
+    color: red;
+    font-weight: bold;
+    font-style: normal;
+    display: block;
+    margin-top: 40%;
+    text-shadow: 1px 1px 1px white, 2px 3px 5px white;
+    transform: rotate(-25deg);
+    transform-origin: 0% 0%;
+} 
+#related .related-container a {
+    color: white;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 5px;
+}
+
+/* search content */
+
+.search-page #search-input {
+    padding: 0.6em;
+    font-size: 1.2em;
+    height: 2.2em;
+    border: 1px solid lightblue;
+}
+
+.search-404 {
+    margin-top: 10em;
+}
+
+.mini-post-list-404{
+    background: rgba(255,255,255,.9);
+}
+
+.mini-post-list-404 .post-preview:first-child {
+    padding-top:1px;
+}
+

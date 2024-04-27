@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    {% include nav.html %}
+    {% if page.is-404 %}
+    {% else %}
+    {% include search.html %}
+    {% endif %}
+
+    {{ content }}
+
+    {% include footer.html %}
+</body>
+
+</html>
