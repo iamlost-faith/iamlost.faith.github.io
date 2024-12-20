@@ -1,0 +1,63 @@
+[ ] check out react-colorful
+[ ] add types number where if value is greater than less than equal even odd
+[ ] make it so that when I click on the record it shows me the leaf and when I click on the leaf it shows me the record.
+[ ] share a tree by generating qr codes for it
+
+[ ] fix the user type and make it a dropdown from the options selected in the schema make it so that they can add another user to the dropdown instead of searching all the time
+
+[ ] create a legend
+
+[ ] read data from csv file
+[ ] read data from xls sheet file
+[ ] have the ability to export the data
+[ ] Moonshot: if the menu, show a button that displays a plant gallery of all my trees.
+[ ] have a way to guide the customer through the steps the way that the google docs does it.
+
+
+[ ] when I delete the columns I should also delete the rows on the tree
+
+[ ] create preset columns todo and happiness tracker only. do not add date. unless to the todo one.
+
+[ ] the date is broken when entered through the form
+
+[ ] bring back the customisations when the user is creating a column!
+
+[ ] add an option to delete the column name in the Customisation editor
+
+[ ] Moonshot: when you choose the tree, preview it.
+
+[ ] add the type "tags". these are values that get added on the fly. they are defferent that multiselects which are predifined. or mix it with the multiselect? int he sense that once one tag is used make it available in the autocomplete?
+
+[ ] make the size a range. where they can select between 0 and 1
+
+[ ]  make it so that the leaves can be dragged and dropped when Notree in case they are overlapping?
+
+[ ]  make it so that tasks can be completed, deleted from withing the tooltip? And when this is done the respective row is deleted too?
+
+[ ] can we make it so that tree types can be changed?
+
+[ ] in the future make it so that if a value appears in the customissation, that the customisation it causes be displayed beside it. like it was before. e.g if I have PO, and when Po set color to red It will be | PO 🔴 |
+
+[ ] Bug: changing the name of the currentTree is not changing it in trees
+
+[ ] Bug: when we create a tree with the same name, we should make the user know.
+
+[ ] Feature: have an option to delete tree, or delete the table rows, not both.
+
+[ ] Feature: when I create two grapes of the same date, create a new stem to allow two or more grapes of the same date on this stem. Right now it should not be called grappes. right now it should be called 31 days!
+
+[ ] https://threejs.org
+
+[ ] https://spline.design
+
+[ ] https://ui.shadcn.com/docs/components/accordion
+
+[ ] https://magicui.design/docs/components/file-tree
+[ ] Instead of one tree has it all-colors, especially when there is a lot of colors, you can have multiple trees colors one with one color. It will become something like a jardin where each plant has one color for the leaves.
+
+[ ] things like the color of the sky; the clouds in the sky, the color of the pot, etc. can encode generic information about the tree. Such as the majority of the information, the tendance, etc.
+
+[ ] intesection of two flowers/leaves: https://stackoverflow.com/questions/62526758/svg-using-checkintersection-with-transformed-elements
+
+[x] add a template called our house-shore tree.
+[x] my assignments tracker

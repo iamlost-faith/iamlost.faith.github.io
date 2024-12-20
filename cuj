@@ -1,0 +1,20 @@
+[1] Someone wats to create a birthday tree
+they need:
+[ ] user column
+[ ] date column
+
+challenge:
+currently we have due, overdue, etc. but the birthday is always in the past! Thus, I need a mechanism of having knowing if it's birthday! 
+- option 1:have some complicated options action items
+- option 2: just add is birthday as one of the options
+
+[2] Someone wants to divide the three high by quater.
+
+    [3] Someone wants to colorise the tree by quater using a date column.
+
+challenge:
+    we don't yet support tree-level customisation, just leaf level, but we will in the future
+
+
+[3] someone wats to use it instead of a journal. e.g of columns, anger level: low, medium, high | is happy? : boolean
+sample settings, when happy, bloom, when angry = low, wither

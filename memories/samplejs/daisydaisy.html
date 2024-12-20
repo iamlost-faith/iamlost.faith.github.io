@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Daisy Daisy</title>
+</head>
+
+<body>
+    <script>
+        // create the SVG element
+        var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svg.setAttribute("width", "100vw");
+        svg.setAttribute("height", "100vh");
+        document.body.appendChild(svg);
+
+        // create the rectangle
+        var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("width", "100%");
+        rect.setAttribute("height", "100%");
+        rect.setAttribute("rx", "15");
+        rect.setAttribute("ry", "15");
+        rect.setAttribute("fill", "skyblue");
+        rect.setAttribute("opacity", "0.5");
+        rect.setAttribute("stroke", "pink");
+        rect.setAttribute("stroke-width", "5");
+        rect.setAttribute("stroke-opacity", "0.9");
+
+        svg.appendChild(rect);
+
+        // the line
+        var line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", "100");
+        line.setAttribute("y1", "100");
+        line.setAttribute("x2", "100");
+        line.setAttribute("y2", "400");
+        line.setAttribute("style", "stroke:green;stroke-width:4");
+        svg.appendChild(line);
+
+        group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        group.setAttribute("name", "petals")
+
+        // the petals
+        /*
+        Play with the higest value of i and 180
+        if you want less petals, do up to i <2 then multiply i by 90 (180/2) in the rotate
+
+        if you want more petal, do up to let say i <18 then multiply i by 10 (180/10) in the rotate
+        */
+        for (var i = 0; i < 10; i++) {
+            var petal = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
+            petal.setAttribute("rx", "80");
+            petal.setAttribute("ry", "10");
+            petal.setAttribute("transform", "translate(100 100) rotate(" + i * 18 + ")");
+            petal.setAttribute("fill", "white");
+            group.appendChild(petal);
+        }
+
+        svg.appendChild(group);
+        // the circle
+        var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        circle.setAttribute("cx", "100");
+        circle.setAttribute("cy", "100");
+        circle.setAttribute("r", "10");
+        circle.setAttribute("style", "fill:orange");
+        svg.appendChild(circle);
+
+        // add click event to the SVG element to show/hide the anchor points
+
+        svg.addEventListener("click", function (event) {
+            var petals = svg.getElementsByTagName("ellipse");
+            for (var i = 0; i < petals.length; i++) {
+                if (petals[i].getAttribute("fill") === "white") {
+                    petals[i].setAttribute("fill", "lightpink");
+                } else {
+                    petals[i].setAttribute("fill", "white");
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
