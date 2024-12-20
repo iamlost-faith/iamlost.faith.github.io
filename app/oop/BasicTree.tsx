@@ -59,7 +59,8 @@ class BasicTree implements TreeType {
                         <option value="bloom">Bloom</option>
                         <option value="fruit">Fruit</option>
                         <option value="root">Root</option>
-                        {type === 'date' && <option value="notify">Notify me</option>}
+                        <option value="notify">Notify me</option>
+                        <option value="notify">Notify user</option>
                     </select>)}
             </>
         );
